@@ -1,0 +1,42 @@
+{
+  "action": "apply",
+  "network": {
+    "name": "DevNetwork",
+    "subnet": "192.168.100.0/24"
+  },
+  "portForwarding": [
+    {
+      "name": "web",
+      "protocol": "TCP",
+      "externalPort": 8080,
+      "internalIP": "192.168.100.10",
+      "internalPort": 80
+    },
+    {
+      "name": "ssh",
+      "protocol": "TCP",
+      "externalPort": 2222,
+      "iternalIP": "192.168.100.10",
+      "internalPort": 22
+    },
+    {
+      "name": "database",
+      "protocol": "TCP",
+      "externalPort": 5432,
+      "internalIP": "192.168.100.20",
+      "internalPort": 5432
+    }
+  ],
+  "vms": [
+    {
+      "name": "WebServer",
+      "ip": "192.168.100.10",
+      "memo": "Ubuntu 22.04 with Nginx"
+    },
+    {
+      "name": "Database",
+      "ip": "192.168.100.20",
+      "memo": "PostgreSQL 15"
+    }
+  ]
+}
