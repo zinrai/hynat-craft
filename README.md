@@ -145,4 +145,4 @@ The script ensures idempotency by always recreating resources from scratch, elim
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) file for details.
+This project is licensed under the [MIT License](./LICENSE).
